@@ -17,6 +17,7 @@ console.log(sheet1.id);
 
 var sheet2 = workbook.addWorksheet('sheet second');
 sheet2.getCell('C5').value = {formula: "FIRST+SECOND", result: 30};
+sheet2.getCell('C6').value = {formula: "\'sheet first\'!C4+\'sheet first\'!C3", result: 30};
 
 workbook.xlsx.writeFile("testFile.xls")
     .then(function (value) {
