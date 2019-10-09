@@ -21,5 +21,5 @@ sheet2.getCell('C6').value = {formula: "\'sheet first\'!C4+\'sheet first\'!C3", 
 
 workbook.xlsx.writeFile("testFile.xls")
     .then(function (value) {
-        console.log("Done");
+        console.log("Really done");
     });
